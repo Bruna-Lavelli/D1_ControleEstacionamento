@@ -1,4 +1,74 @@
-.container {
+body {
     margin: 20px;
     padding: 20px;
+    background-color:steelblue;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+.container {
+    display: block;
+    background-color:rgb(169, 198, 221);
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    border-radius: 5px;
+}
+
+.cadastro_veiculo {
+    padding: 40px;
+    border-color:black;
+    color: rgb(0, 44, 80);
+}
+
+
+.cadastro_veiculo h1 {
+    text-align: center;
+}
+
+
+.cadastro_veiculo h2 {
+    text-align: center;
+}
+
+.cadastro_veiculo p {
+    justify-content: center;
+    padding: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.input-group {
+    padding: 30px;
+}
+
+.input-group label {
+    padding: 10px;
+    font-size: 23px;
+}
+
+.input-group input {
+    padding: 8px;
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: steelblue;
+    font-size: large;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 15px;
+}
+
