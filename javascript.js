@@ -1,5 +1,5 @@
 // alert('ufufiu');
-const button= document.querySelector('form');
+const button = document.querySelector('form');
 console.log (button)
 
 button.addEventListener("submit", function(ev){
@@ -14,3 +14,27 @@ button.addEventListener("submit", function(ev){
     console.log({nomeproprietario, numeroapartamento, blocoapartamento, modeloveiculo, corveiculo})
 
 });
+
+const form = document.addEventListener("submit", function(ev){
+    ev.preventDefault()
+    exibirPopup();
+});
+
+function exibirPopup() {
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+  
+    const mensagem = document.createElement('p');
+    mensagem.textContent = 'Cadastro realizado com sucesso!';
+  
+    const botaoFechar = document.createElement('button');
+    botaoFechar.textContent = 'Fechar';
+    botaoFechar.addEventListener('click', function() {
+      popup.remove();
+    });
+  
+    popup.appendChild(mensagem);
+    popup.appendChild(botaoFechar);
+  
+    document.body.appendChild(popup);
+  }
